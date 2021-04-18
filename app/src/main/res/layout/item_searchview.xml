@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:translationZ="1dp"
+    android:layout_height="@dimen/height_search_view"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_xxsmall"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_xxsmall"
+    android:background="@drawable/outline_bg_rounded"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="3dp"
+    android:padding="@dimen/margin_medium">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_xxsmall"
+        android:clickable="false"
+        android:focusable="false"
+        app:srcCompat="@drawable/ic_search_line" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/search_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xxsmall"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_xxsmall"
+        android:layout_toStartOf="@id/action_forward"
+        android:layout_toEndOf="@id/action1"
+        android:hint="Search contacts"
+        android:clickable="false"
+        android:focusable="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Aurora.Tab"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_xxsmall"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_menu_line" />
+</RelativeLayout>

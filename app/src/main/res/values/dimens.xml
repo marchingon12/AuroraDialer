@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="margin_bottom">64dp</dimen>
+    <dimen name="margin_top">64dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_xsmall">6dp</dimen>
+    <dimen name="margin_xxsmall">4dp</dimen>
+
+    <dimen name="icon_size_qr">172dp</dimen>
+    <dimen name="icon_size_large">96dp</dimen>
+    <dimen name="icon_size_big">72dp</dimen>
+    <dimen name="icon_size_medium">52dp</dimen>
+    <dimen name="icon_size_small">48dp</dimen>
+    <dimen name="icon_size_action">36dp</dimen>
+    <dimen name="icon_size_default">24dp</dimen>
+    <dimen name="icon_size_xsmall">18dp</dimen>
+
+    <dimen name="height_search_view">52dp</dimen>
+    <dimen name="height_action_view">56dp</dimen>
+
+    <dimen name="dialog_rounded_corner">8dp</dimen>
+    <dimen name="dialog_vertical_margin">32dp</dimen>
+    <dimen name="dialog_horizontal_margin">32dp</dimen>
+    <dimen name="dialog_elevation">24dp</dimen>
+</resources>

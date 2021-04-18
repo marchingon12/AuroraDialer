@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_mic_off"
+        app:actionName="Mute" />
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_volume_up"
+        app:actionName="Speaker" />
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_dialpad"
+        app:actionName="Keypad" />
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_person_add"
+        app:actionName="Add" />
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_voicemail"
+        app:actionName="Record" />
+
+    <com.aurora.phone.view.Action
+        android:id="@+id/action_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        app:actionIcon="@drawable/ic_phone_pause"
+        app:actionName="Pause" />
+</com.google.android.flexbox.FlexboxLayout>

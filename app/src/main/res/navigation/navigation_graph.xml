@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.aurora.phone.fragment.CallLogFragment"
+        android:label="@string/title_recent"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.aurora.phone.fragment.ContactsFragment"
+        android:label="@string/title_contact"
+        tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.aurora.phone.fragment.FavouriteFragment"
+        android:label="@string/title_favourite"
+        tools:layout="@layout/fragment_fav" />
+</navigation>

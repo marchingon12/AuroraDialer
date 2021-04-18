@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Key">
+        <attr name="key" format="string" />
+        <attr name="kayChar" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="Action">
+        <attr name="actionName" format="string" />
+        <attr name="actionIcon" format="integer" />
+    </declare-styleable>
+</resources>

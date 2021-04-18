@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="128dp"
+    android:background="@drawable/outline_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:srcCompat="@drawable/circle_bg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ic_menu_dots"
+        app:tint="?colorControlNormal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:textAppearance="@style/TextAppearance.Aurora.Title"
+        tools:text="Rahul Kumar Patel" />
+</RelativeLayout>

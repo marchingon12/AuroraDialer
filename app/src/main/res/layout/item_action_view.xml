@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_action_view"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:focusable="true"
+    android:padding="@dimen/margin_medium"
+    android:translationZ="1dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action_backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_xxsmall"
+        android:clickable="false"
+        android:focusable="false"
+        app:srcCompat="@drawable/ic_back_line" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_toStartOf="@id/action_forward"
+        android:layout_toEndOf="@id/action_backward"
+        android:clickable="false"
+        android:focusable="false"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.Aurora.Title"
+        tools:text="Activity Name" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_xxsmall"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_forward_line" />
+</RelativeLayout>

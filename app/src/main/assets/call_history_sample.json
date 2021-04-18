@@ -1,0 +1,47 @@
+[
+  {
+    "contactId": 123,
+    "groupId": 0,
+    "recentNumber": "7204209601",
+    "displayName": "Ramesh",
+    "duration": 500,
+    "time": 132465982465,
+    "type": "MISSED"
+  },
+  {
+    "contactId": 124,
+    "groupId": 0,
+    "recentNumber": "7204209602",
+    "displayName": "Suresh",
+    "duration": 500,
+    "time": 132465981465,
+    "type": "INCOMING"
+  },
+  {
+    "contactId": 125,
+    "groupId": 0,
+    "recentNumber": "7204209603",
+    "displayName": "Amar",
+    "duration": 500,
+    "time": 132465987465,
+    "type": "OUTGOING"
+  },
+  {
+    "contactId": 126,
+    "groupId": 0,
+    "recentNumber": "7204209604",
+    "displayName": "Akbar",
+    "duration": 500,
+    "time": "132465989465",
+    "type": "REJECTED"
+  },
+  {
+    "contactId": 126,
+    "groupId": 0,
+    "recentNumber": "7204209605",
+    "displayName": "Anthony",
+    "duration": 500,
+    "time": 132425987465,
+    "type": "MISSED"
+  }
+]

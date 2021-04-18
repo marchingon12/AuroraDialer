@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/margin_top"
+                android:paddingBottom="@dimen/margin_bottom"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_contact" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_no_fav"
+                android:layout_width="@dimen/icon_size_big"
+                android:layout_height="@dimen/icon_size_big"
+                android:layout_above="@id/txt_no_fav"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_bg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_no_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="No Contacts"
+                android:textAppearance="@style/TextAppearance.Aurora.SubTitle" />
+        </RelativeLayout>
+    </ViewSwitcher>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

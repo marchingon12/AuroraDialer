@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- primary palette -->
+    <color name="colorAccent">@color/colorBlue</color>
+    <color name="colorPrimary">@color/colorBlue</color>
+    <color name="colorPrimaryDark">#EEE</color>
+    <color name="colorPrimaryVariant">@color/colorWhite</color>
+    <color name="colorSecondary">@color/colorPrimary</color>
+    <color name="colorSecondaryVariant">@color/colorWhite</color>
+    <color name="colorBackground">@color/colorWhite</color>
+    <color name="colorWindowBackground">@color/colorBackground</color>
+    <color name="colorNavigation">@color/colorPrimaryDark</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteAlt">#F5F5F5</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorGrey">#747474</color>
+
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextSecondary">#545454</color>
+    <color name="colorScrim">#10000000</color>
+    <color name="colorActionScrim">#20000000</color>
+    <color name="colorStroke">#20000000</color>
+
+    <!--More Colors-->
+    <color name="colorBlue">#4285f4</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorGreen">#3ddc84</color>
+    <color name="colorOrange">#f86734</color>
+    <color name="colorNavy">#073042</color>
+</resources>

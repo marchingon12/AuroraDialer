@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:colorBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorScrim">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/margin_small"
+            app:srcCompat="@drawable/ic_person_add" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_input_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_search_view"
+            android:layout_toStartOf="@id/action_backspace"
+            android:layout_toEndOf="@id/action_add"
+            android:background="@null"
+            android:inputType="phone"
+            android:letterSpacing="0.15"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            tools:text="7204209600" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/margin_small"
+            app:srcCompat="@drawable/ic_backspace" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/system_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_small">
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key1_char"
+            app:key="@string/key1_num"
+            app:layout_constraintBottom_toTopOf="@id/key4"
+            app:layout_constraintEnd_toStartOf="@id/key2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key2_char"
+            app:key="@string/key2_num"
+            app:layout_constraintBottom_toTopOf="@id/key5"
+            app:layout_constraintEnd_toStartOf="@id/key3"
+            app:layout_constraintStart_toEndOf="@id/key1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key3_char"
+            app:key="@string/key3_num"
+            app:layout_constraintBottom_toTopOf="@id/key6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/key2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key4_char"
+            app:key="@string/key4_num"
+            app:layout_constraintBottom_toTopOf="@id/key7"
+            app:layout_constraintEnd_toStartOf="@id/key5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key1" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key5_char"
+            app:key="@string/key5_num"
+            app:layout_constraintBottom_toTopOf="@id/key8"
+            app:layout_constraintEnd_toStartOf="@id/key6"
+            app:layout_constraintStart_toEndOf="@id/key4"
+            app:layout_constraintTop_toBottomOf="@id/key2" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key6_char"
+            app:key="@string/key6_num"
+            app:layout_constraintBottom_toTopOf="@id/key9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/key5"
+            app:layout_constraintTop_toBottomOf="@id/key3" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key7_char"
+            app:key="@string/key7_num"
+            app:layout_constraintBottom_toTopOf="@id/key10"
+            app:layout_constraintEnd_toStartOf="@id/key8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key4" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key8_char"
+            app:key="@string/key8_num"
+            app:layout_constraintBottom_toTopOf="@id/key0"
+            app:layout_constraintEnd_toStartOf="@id/key9"
+            app:layout_constraintStart_toEndOf="@id/key7"
+            app:layout_constraintTop_toBottomOf="@id/key5" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key9_char"
+            app:key="@string/key9_num"
+            app:layout_constraintBottom_toTopOf="@id/key11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/key8"
+            app:layout_constraintTop_toBottomOf="@id/key6" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key10_char"
+            app:key="@string/key10_num"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key7" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key0_char"
+            app:key="@string/key0_num"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key11"
+            app:layout_constraintStart_toEndOf="@id/key10"
+            app:layout_constraintTop_toBottomOf="@id/key8" />
+
+        <com.aurora.phone.view.Key
+            android:id="@+id/key11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kayChar="@string/key11_char"
+            app:key="@string/key11_num"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/key0"
+            app:layout_constraintTop_toBottomOf="@id/key9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/action_sim1"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:text="SIM1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorGreen"
+            app:icon="@drawable/ic_phone_fill"
+            app:iconTint="@color/colorWhite" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/action_sim2"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="SIM2"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorBlue"
+            app:icon="@drawable/ic_phone_fill"
+            app:iconTint="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

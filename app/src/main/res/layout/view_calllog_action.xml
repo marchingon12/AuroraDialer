@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorScrim"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_dual_sim_1_fill"
+        app:tint="@color/colorGreen" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_dual_sim_2_fill"
+        app:tint="@color/colorBlue" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_message_2_fill"
+        app:tint="@color/colorOrange" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_calllog_info_fill"
+        app:tint="@color/colorNavy" />
+
+</com.google.android.flexbox.FlexboxLayout>
